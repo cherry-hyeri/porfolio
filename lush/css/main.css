@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+#warpper.warpper { margin: 0; padding: 0; }
+
+/* 헤더 */
+.header_area { position: sticky; top: 0; left: 0; padding: 10px 0; background: #000; z-index: 11; }
+header { width: 1300px; margin: 0 auto; }
+header::after { content: ""; clear: both; display: block; }
+header h1 { float: left; }
+header h1 img { width: 200px; }
+header nav { float: left; width: 1100px; }
+header ul li { float: left; width: calc(100% / 4); text-align: center; line-height: 2; }
+header ul li a { font-size: 28px; color: #fff; font-weight: 600; }
+
+/* 비쥬얼 */
+.visual { position: relative; width: 100%; height: auto; }
+.visual video { width: 100%; }
+.visual span { position: absolute; top: 0; right: 20%; font-weight: 600; font-size: 104px; writing-mode: vertical-rl; color: rgba(255,255,255,0.5); }
+
+/* 공통 */
+section { width: 1300px; max-width: 1300px; margin: 0 auto; padding: 50px 0; }
+section h2 { display: inline-block; padding-bottom: 10px; font-size: 48px; font-weight: 600; border-bottom: 2px solid #000; }
+
+/* 스파레시피 */
+.recipe_list { width: 100%; margin: 50px 0; padding: 20px 0; }
+.relist { width: 100%; }
+.relist::after { content: ""; clear: both; display: block; }
+.relist_bottom {margin-top: 40px; }
+.relist .relist_cont { float: left; margin-bottom: 50px; width: 580px; height: 300px; }
+.relist_cont:last-child { float: right; }
+.relist .relist_cont ul { float: right; text-align: right; margin-right: 20px; }
+.relist_cont li img { width: 318px; margin-top: 20px; }
+.relist_txt { margin-top: 20px; }
+.relist_txt span { font-size: 18px; font-weight: 600; }
+.view_more { margin-top: 40px; }
+.view_more a { position: absolute; bottom: 50px; right: 20px; padding: 6px 30px; font-size: 16px; color:#fff; border-radius: 30px; background: rgba(0,0,0,0.7); }
+
+.relist_01 { position: relative; cursor: pointer; background: url(../images/beutysleep_bg.png) no-repeat center center; background-size: cover; }
+.relist_02 { position: relative; cursor: pointer; background: url(../images/twilight_bg.png) no-repeat center center; background-size: cover; }
+.relist_03 { position: relative; cursor: pointer; background: url(../images/intergalactic_bg.png) no-repeat center center; background-size: cover; }
+.relist_04 { position: relative; cursor: pointer; background: url(../images/rosycheeks_bg.png) no-repeat center center; background-size: cover; }
+.relist_01:hover { background: url(../images/beutysleep_hover.png) no-repeat center center; background-size: cover; }
+.relist_02:hover { background: url(../images/twilight_hover.png) no-repeat center center; background-size: cover; }
+.relist_03:hover { background: url(../images/intergalactic_hover.png) no-repeat center center; background-size: cover; }
+.relist_04:hover { background: url(../images/rosycheeks_hover.png) no-repeat center center; background-size: cover; }
+.relist_01:hover ul, .relist_02:hover ul,
+.relist_03:hover ul, .relist_04:hover ul
+{ display: none; }
+
+.relist_01::before { content: ""; position: absolute; top: -10%; left: -7%; width: 220px; height: 220px; background: url(../images/beutysleep.png) no-repeat center center; background-size: 100%; }
+.relist_02::before { content: ""; position: absolute; top: -14%; left: -7%; width: 220px; height: 220px; background: url(../images/twilight.png) no-repeat center center; background-size: 100%; }
+.relist_03::before { content: ""; position: absolute; top: -14%; left: -7%; width: 220px; height: 220px; background: url(../images/intergalactic.png) no-repeat center center; background-size: 100%; }
+.relist_04::before { content: ""; position: absolute; top: -10%; left: -7%; width: 220px; height: 220px; background: url(../images/rosycheeks.png) no-repeat center center; background-size: 100%; }
+
+/* 베스트아이템 */
+.best_bg { width: 100%; height: 100%; background: url(../images/back_bg.jpg) no-repeat center center; background-size: 100%; }
+section.best_item { text-align: center; background: rgba(255,255,255,0.5); }
+/* slide */
+.slide_wrapper { position: relative; width: 970px; height: 500px; margin: 70px auto; overflow: hidden; }
+.slide_container { width: 2988px; }
+.slides::after { content: ""; clear: both; display: block; }
+.slides { position: relative; width: 100%; height: 550px; }
+.slides .slideImg { position: relative; float: left; cursor: pointer; width: 468px; height: 550px; margin-left: 30px; }
+.slides .slideImg.ban01 { margin: 0; }
+.slides .slideImg .ban_txt { padding: 20px; width: 90%; height: 84%; transform: translate(6%,4%); border: 2px solid #fff; }
+.slides .slideImg .ban_txt img.item { position: absolute; width: 180px; top: 20px; left: 50%; transform: translate(-50%,0); }
+.slides .slideImg .ban_txt .ban_tit { display: block; margin-top: 200px; }
+.slides .slideImg .ban_txt .ban_tit img {   margin: 0 auto; }
+.slides .slideImg .ban_txt span.name { position: absolute; bottom: 40px; left: 50%; width: 100%; transform: translate(-50%,0); font-style: italic; display: block; text-align: center; font-size: 18px; font-weight: 600; color: #fff; }
+.slides .slideImg .ban_txt span.hash_tag { margin-top: 10px; display: block; text-align: center; font-size: 16px; color: #fff; }
+
+.slideImg.ban01 { background: url(../images/slide01.png) no-repeat center center; }
+.slideImg.ban02 { background: url(../images/slide02.png) no-repeat center center; }
+.slideImg.ban03 { background: url(../images/slide03.png) no-repeat center center; }
+.slideImg.ban04 { background: url(../images/slide04.png) no-repeat center center; }
+.slideImg.ban06 { background: url(../images/slide06.png) no-repeat center center; }
+.slideImg.ban07 { background: url(../images/slide07.png) no-repeat center center; }
+
+
+/* 리뷰.스파.이벤트 */
+section.spa_review { padding: 100px 0; }
+
+.review_area::after { content: ""; clear: both; display: block; }
+.review_area .review_head { float: left; text-align: right; padding: 40px 20px; width: 280px; height: 190px; background: url(../images/bestreview.jpg) no-repeat center center; background-size: 100% 100%; }
+.review_area .review_head h3 { position: relative; margin-bottom: 10px; font-size: 30px; font-weight: 600; }
+.review_area .review_head h3::before { content: ""; position: absolute; bottom: 0; width: 192px; height: 2px; background: #000; }
+.review_area .review_head span { font-size: 14px; text-align: right; font-weight: 600; }
+
+/* .owl-stage-outer .owl-stage .owl-item { width: 190px!important; }
+.owl-stage-outer .owl-stage .owl-item img { width: 100%; height: 100%; } */
+
+.spa_area .spa_head { display: inline-block; padding: 20px; width: 280px; height: 300px; text-align: right; }
+.spa_area .spa_head h3 { position: relative; margin-bottom: 10px; font-size: 26px; font-weight: 600; }
+.spa_area .spa_head h3::before { content: ""; position: absolute; bottom: -5px; width: 226px; height: 2px; background: #000; }
+.spa_area .spa_head span { font-weight: 600; }
+.spa_area .spa_head .spa_txt { margin-top: 30px; }
+.spa_head .spa_txt p { margin-bottom: 40px; font-size: 16px; font-weight: 600; line-height: 1.75; }
+.spa_head .spa_txt a { padding: 5px 30px; font-size: 16px; font-weight: 600; background: #000; color: #fff; border-radius: 30px; }
+
+.spa_bg { display: inline-block; margin-left: -4px; width: 250px; height: 300px; background: url(../images/spa.jpg) no-repeat center center; background-size: cover; }
+.event { display: inline-block; margin-left: -5px; width: 765px; height: 300px; }
+.event img { width: 100%; height: 100%; }
+
+/* 비건 */
+.vegan_bg { padding: 20px; width: 100%; height: 900px; background: url(../images/vegan2.jpg) no-repeat center center; background-size: 100% 100%; }
+
+section.vegan_area { position: relative; height: 870px; }
+.vegan_box { position: absolute; padding: 40px; right: 0; top: 50%; transform: translate(0,-50%); width: 500px; height: 600px; background: rgba(0,0,0,0.9); }
+.vegan_bd { padding: 27px; border: 2px solid #fff; }
+.vegan_bd .vegan_img { display: block; margin-top: 30px; }
+.vegan_txt { text-align: center; margin-top: 50px; }
+.vegan_txt span { color: #fff; font-size: 26px; font-weight: 600; }
+.vegan_txt p { margin-top: 30px; margin-bottom: 50px; font-size: 16px; word-break: keep-all; color: #fff; line-height: 1.75; }
+.vegan_txt a { padding: 5px 20px; font-size: 16px; color: #000; background: #fff; font-weight: 600; border-radius: 30px; }
+.vegan_txt a:hover { background: #000; color: #fff; font-weight: 600; }
+
+/* footer */
+.footer_area { background: #000; }
+.footer_area img { width: 100%; }
+

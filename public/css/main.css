@@ -1,0 +1,345 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Nanum Gothic', sans-serif; }
+#wrapper { margin: 0 auto; }
+
+/* header */
+header { margin: 0; padding: 0; height: 100px; }
+header nav { position: relative; height: 50px; padding: 10px; }
+header nav li { position: absolute; }
+header nav li.left, header nav li.right { width: 150px; text-align: center; }
+header nav li.left { left: 10px; }
+header nav li.left::after { content: ""; position: absolute; top: 50%; left: 100%; transform: translate(0,-50%); width: 730px; height: 1px; background: #000; }
+header nav li.right { right: 10px; }
+header nav li.right::after { content: ""; position: absolute; top: 50%; right: 100%; width: 730px;  transform: translate(0,-50%); height: 1px; background: #000; }
+header nav li.middle { left: 50%; transform: translate(-50%, 0); }
+header nav li span { font-size: 18px; font-weight: 600; }
+header nav li h1 { width: 90px; margin: 0 auto; font-size: 20px; font-weight: 600; }
+
+/* 메인 */
+.section1 { position: relative; width: 100%; height: 900px; margin: 0 auto; }
+
+.txtimg01 { position: absolute; top: 15%; left: 17%; width: 450px; z-index: 99; }
+.txtimg02 { position: absolute; top: 60%; left: 60%; width: 450px; z-index: 99; }
+
+.slide { position: relative; width: 700px; height: 700px; margin: 0 auto; }
+.slide .slideList { position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; }
+.slide .slideList img { width: 100%; height: 100%; display: block; border: 0; border-radius: 50%; margin-bottom: 10px; }
+
+/* 자기소개 */
+.section2 { background: #e8cef5; padding: 20px 0 40px; }
+.section_cont { width: 1400px; margin: 0 auto;}
+
+#gocoder_typing { display: block; width: 340px; padding: 10px 0; margin: 0 auto; font-weight: 600; }
+
+.profile { padding: 20px 0; }
+.profile .my { display: inline-block; }
+.my img { width: 200px; display: inline-block; }
+
+.container01 { display: inline-block; margin-left: 20px; padding: 10px; height: 250px; border: 1px solid #000; background: rgba(255,255,255,0.5); }
+.container01 h1 { position: relative; font-weight: 600; margin-bottom: 10px; }
+.container01 h1::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 100px; height: 1px; background: #000; }
+.content01 p { line-height: 1.75; }
+
+.container02 { display: inline-block; margin-left: 20px; padding: 10px; width: 764px; height: 250px; border: 1px solid #000; background: rgba(255,255,255,0.5); }
+.container02 h1 { position: relative; font-weight: 600; margin-bottom: 10px; }
+.container02 h1::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 100px; height: 1px; background: #000; }
+.content02 p { line-height: 1.4; }
+.content02 p strong { font-size: 18px; font-weight: 600; display: block; }
+
+.skills { border: 1px solid #000; padding: 20px; background: rgba(255,255,255,0.5); }
+.skills h2 { position: relative; font-weight: 600; margin-bottom: 10px; font-size: 18px; }
+.skills h2::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 100px; height: 1px; background: #000; }
+.skills .sub_txt { display: inline-block; width: 226px; padding: 10px; line-height: 1.25; }
+
+.skill_cont1 { margin-left: 30px; display: inline-block; }
+.skill_cont2 { margin-left: 30px; display: inline-block; }
+
+.skill { width: 500px; height: 60px;  }
+.skill p { position: relative; font-weight: 600; display: block; margin-bottom: 10px; }
+
+.percent01, .percent02, .percent03, .percent04, .percent05, .percent06 { width: 500px; height: 20px; background: #d1d1d1; border-radius: 4px; }
+.percent01 .bar01 { padding: 0 10px; width: 100%; height: 100%; text-align: right; background: #9592d4; border-radius: 4px; font-weight: 600; line-height: 20px; }
+.percent02 .bar02 { padding: 0 10px; width: 70%; height: 100%; text-align: right; background: #aed1eb; border-radius: 4px; font-weight: 600; line-height: 20px; }
+.percent03 .bar03 { padding: 0 10px; width: 100%; height: 100%; text-align: right; background: #abf7b6; border-radius: 4px; font-weight: 600; line-height: 20px; }
+.percent04 .bar04 { padding: 0 10px; width: 100%; height: 100%; text-align: right; background: #92d4c7; border-radius: 4px; font-weight: 600; line-height: 20px; }
+.percent05 .bar05 { padding: 0 10px; width: 70%; height: 100%; text-align: right; background: #9592d4; border-radius: 4px; font-weight: 600; line-height: 20px; }
+.percent06 .bar06 { padding: 0 10px; width: 75%; height: 100%; text-align: right; background: #aed1eb; border-radius: 4px; font-weight: 600; line-height: 20px; }
+
+/* 작업 */
+section.section3 { height: 800px; padding: 30px 0; }
+.section3 .work { width: 1400px; margin: 0 auto; }
+.work .work_tit { padding: 20px 0; margin-bottom: 50px; background: linear-gradient(to right, #e8cef5, #9592d4, #aed1eb,#92d4c7,#abf7b6); }
+.work .work_tit h2 { font-size: 30px; font-weight: 600; text-align: center; }
+
+.slide_wrapper { width: 1400px; height: 520px; overflow: hidden; margin: 0 auto; }
+.slide_container { width: 5600px; height: 520px; }
+.slides::after { content: ""; clear: both; display: block; }
+.slides { position: relative; width: 100%; height: 520px; }
+.slides .slideImg { position: relative; float: left; margin-left: 100px; width: 650px; height: 520px; cursor: pointer; }
+.slides .slideImg a img { width: 650px; }
+
+.slide_txt { width: 100%; height: 150px; position: absolute; bottom: -100%; background: rgba(0,0,0,0.5); }
+.slide_txt p { margin-top: 50px; font-size: 40px; font-weight: 600; color: #fff; text-align: center; }
+.slideImg:hover .slide_txt { transition: linear 0.3s; bottom: 0%; }
+
+/* .owl-carousel { border: 1px solid blue; height: 300px; }
+.owl-dots { display: none; }
+.owl-stage, .owl-stage-outer { height: 300px; }
+.owl-stage .owl-item { width: 300px!important; height: 300px; border: 1px solid seagreen; }
+ */
+
+/* 히스토리 */
+.section4 { position: relative; height: 2000px; }
+.section4 h1 { position: absolute; left: 130px; color: #ccc; opacity: 0.5; font-size: 300px; font-family: 'Impact'; }
+.section4 .year { position: absolute; top: 0; left: 50%; transform: translate(-50%,0); width: 250px; height: 2000px; background: linear-gradient(#e8cef5,#9592d4,#aed1eb,#92d4c7,#abf7b6); }
+.section4 h2 { position: absolute; top: 150px; left: 48%; font-size: 130px; font-family: 'Impact'; color: #fff; }
+.section4 h2.y2017 { top: 700px; left: 44%; }
+.section4 h2.y2019 { top: 1250px; left: 48%; }
+
+.history01 { position: absolute; top: 20px; left: 60%; width: 700px; }
+.travel_txt { position: absolute; top: 220px; left: 14%; word-break: keep-all; width: 500px; height: 500px; text-align: right; }
+.travel_txt h3 { font-size: 100px; font-family: 'Impact'; color: #9592d4; }
+.travel_txt span strong { font-size: 30px; font-weight: 600; }
+
+.history02 { position: absolute; top: 750px; left: 6%; width: 650px; }
+.grad_txt { position: absolute; top: 680px; left: 60%; width: 500px; height: 500px; word-break: keep-all; text-align: left; }
+.grad_txt h3 { font-size: 100px; font-family: 'Impact'; color: #aed1eb; }
+.grad_txt span strong { font-size: 30px; font-weight: 600; }
+
+.history03 { position: absolute; top: 1300px; left: 60%; width: 450px; }
+.yon_txt { position: absolute; top: 1430px; left: 14%; width: 500px; height: 500px; word-break: keep-all; text-align: right; }
+.yon_txt h3 { font-size: 95px; font-family: 'Impact'; color: #92d4c7; }
+.yon_txt span strong { font-size: 30px; font-weight: 600; }
+
+/* footer */
+footer { position: relative; border-top: 1px solid #ccc; padding: 40px 0 20px; }
+footer .bye { position: absolute; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; background: url(../images/sea01.jpg) no-repeat; background-size: cover; opacity: 0.5; }
+footer .end { width: 1200px; margin: 0 auto;  }
+footer .end img { display: inline-block; margin-left: 100px; }
+footer .end_txt { display: inline-block; margin-top: 50px; margin-left: 50px; width: 600px; vertical-align: top; }
+footer .end_txt p { font-size: 30px; font-weight: 600; margin-bottom: 20px; }
+footer .end_txt span { font-size: 15px; line-height: 2; font-weight: 600; word-break: keep-all; }
+footer .copy { margin-top: 20px; text-align: center; font-weight: 600; }
+
+
+/* 반응형 */
+@media screen and (max-width:1440px) and (min-width:1200px) {
+    
+    header nav li h1 { width: 84px; }
+    header nav li.left::after { width: 500px; }
+    header nav li.right::after { width: 500px; }
+
+    .txtimg01 { left: 7%; }
+
+    .section2 .section_cont { width: 1200px; }
+    .section_cont .profile { padding: 20px; }
+    .my img { width: 250px; }
+    .container01 { width: 300px; height: 310px; }
+    .container02 { width: 560px; height: 310px; }
+    .skills { width: 1160px; margin: 0 auto; }
+
+    .section3 .work { width: 1200px; }
+    .slide_wrapper { width: 700px; }
+
+
+    .history01 { width: 450px; left: 61%; }
+    .travel_txt { left: 1%; width: 450px; }
+    .y2017 { left: 41%; }
+    .history02 { width: 450px; left: 1%; }
+    .grad_txt { width: 450px; left: 62%; top: 600px; }
+    .history03 { width: 430px; left: 62%; }
+    .yon_txt { left: 1%; top: 1300px; width: 450px; }
+
+}
+
+@media screen and (max-width:1199px) and (min-width:1024px) {
+    header nav li h1 { width: 84px; }
+    header nav li.left::after { width: 300px; }
+    header nav li.right::after { width: 300px; }
+
+    section.section1 { height: 600px; }
+    .txtimg01, .txtimg02 { width: 350px; }
+    .section1 .txtimg01 { top: 0; left: 8%; }
+    .slide { width: 500px; height: 500px; }
+
+    .section2 .section_cont { width: 1000px; }
+    .my img { width: 278px; }
+    .container01 { width: 250px; height: 350px; }
+    .container02 { width: 422px; height: 350px; }
+    .skills .sub_txt { display: block; width: 100%; }
+    .skill_cont1, .skill_cont2 { display: block; margin: 0 auto; width: 500px; }
+
+    .section3 .work { width: 1000px; }
+    .slide_wrapper { width: 700px; }
+
+    .section4 h1 { font-size: 200px; left: 1%; }
+    .section4 .year { width: 200px; }
+    .section4 h2 { font-size: 100px; }
+    .section4 h2.y2017 { left: 41%; }
+    .section4 h2.y2019 { top: 1200px; }
+
+    .history01 { width: 380px; top: 100px; left: 61%; }
+    .travel_txt { width: 380px; top: 110px; left: 2%; }
+    .history02 { width: 380px; left: 2%; }
+    .grad_txt { width: 380px; left: 61%; }
+    .grad_txt h3 { font-size: 80px; }
+    .history03 { width: 380px; left: 61%; top: 1250px; }
+    .yon_txt { width: 380px; left: 2%; top: 1280px; }
+    
+
+    footer .end { width: 1000px; }
+    footer .end img { margin-left: 78px; }
+    footer .end .end_txt { width: 500px; }
+
+}
+
+@media screen and (max-width:1023px) and (min-width:769px) {
+    header nav li h1 { width: 84px; }
+    header nav li.left::after { width: 300px; }
+    header nav li.right::after { width: 300px; }
+
+    section.section1 { height: 600px; }
+    .txtimg01, .txtimg02 { width: 350px; }
+    .section1 .txtimg01 { top: 0; left: 8%; }
+    .slide { width: 500px; height: 500px; }
+
+    .section2 .section_cont { width: 1000px; }
+    .my img { width: 278px; }
+    .container01 { width: 250px; height: 350px; }
+    .container02 { width: 422px; height: 350px; }
+
+    .section3 .work { width: 1000px; }
+    .slide_wrapper { width: 700px; }
+
+    .section4 h1 { font-size: 200px; left: 1%; }
+    .section4 .year { width: 200px; }
+    .section4 h2 { font-size: 100px; }
+    .section4 h2.y2017 { left: 41%; }
+    .section4 h2.y2019 { top: 1200px; }
+
+    .history01 { width: 380px; top: 100px; left: 61%; }
+    .travel_txt { width: 380px; top: 110px; left: 2%; }
+    .history02 { width: 380px; left: 2%; }
+    .grad_txt { width: 380px; left: 61%; }
+    .grad_txt h3 { font-size: 80px; }
+    .history03 { width: 380px; left: 61%; top: 1250px; }
+    .yon_txt { width: 380px; left: 2%; top: 1280px; }
+    
+
+    footer .end { width: 1000px; }
+    footer .end img { margin-left: 78px; }
+    footer .end .end_txt { width: 500px; }
+}
+
+@media screen and (max-width:768px) {
+    header nav li h1 { width: 84px; }
+    header nav li.left::after { width: 176px; }
+    header nav li.right::after { width: 176px; }
+
+    section.section1 { height: 500px; }
+    .txtimg01, .txtimg02 { width: 250px; }
+    .section1 .txtimg01 { top: 0; left: 8%; }
+    .section1 .txtimg02 { top: 50%; }
+    .slide { width: 400px; height: 400px; }
+
+    .section2 .section_cont { width: 700px; }
+    .my img { width: 335px; }
+    .container01 { width: 335px; height: 416px; }
+    .container01 h1, .container02 h1 { font-size: 18px; }
+    .container01 .content01 p { font-size: 18px; line-height: 2; }
+    .container02 { margin-left: 0; margin-top: 20px; width: 696px; height: 350px; }
+    .container02 .content02 p { font-size: 18px; }
+    .skills .sub_txt { width: 100%; }
+    .skill_cont1, .skill_cont2 { display: block; margin: 0 auto; width: 500px; }
+
+    .section3 .work { width: 700px; }
+    .slide_wrapper { width: 700px; }
+
+    section.section4 { height: 1800px; }
+    .section4 h1 { font-size: 150px; left: 1%; }
+    .section4 .year { width: 150px; height: 1800px; }
+    .section4 h2 { font-size: 80px; }
+    .section4 h2.y2016 { top: 90px; }
+    .section4 h2.y2017 { left: 41%; }
+    .section4 h2.y2019 { top: 1100px; }
+
+    .history01 { width: 280px; top: 50px; left: 62%; }
+    .travel_txt { width: 280px; top: 110px; left: 2%; }
+    .travel_txt h3 { font-size: 60px; }
+    .travel_txt strong { font-size: 24px; }
+    .history02 { width: 280px; left: 2%; }
+    .grad_txt { width: 280px; left: 61%; }
+    .grad_txt h3 { font-size: 60px; }
+    .grad_txt strong { font-size: 24px; }
+    .history03 { width: 280px; left: 61%; top: 1200px; }
+    .yon_txt { width: 280px; left: 2%; top: 1050px; }
+    .yon_txt h3 { font-size: 60px; }
+    .yon_txt strong { font-size: 24px; }
+    
+
+    footer .end { width: 700px; }
+    footer .end img { margin: 0; width: 250px; }
+    footer .end .end_txt { width: 400px; margin: 0 10px; }
+    footer .end .end_txt p { font-size: 24px; }
+}
+
+@media screen and (max-width:425px) and (min-width:300px) {
+    header nav li.left { width: 80px; }
+    header nav li.right { width: 44px; }
+    header nav li.middle { width: 80px; }
+    header nav li.left::after { width: 24px; display: none; }
+    header nav li.right::after { width: 22px; display: none; }
+    header nav ul li span { font-size: 12px; }
+
+    section.section1 { height: 350px; }
+    .txtimg01, .txtimg02 { width: 150px; }
+    .section1 .txtimg01 { top: 0; left: 8%; }
+    .section1 .txtimg02 { top: 50%; left: 50%; }
+    .slide { width: 260px; height: 260px; }
+
+    .section2 .section_cont { width: 300px; }
+    .section_cont .gocoder_typing { width: 300px; }
+    .my img { width: 300px; }
+    .container01 h1, .container02 h1 { font-size: 18px; }
+    .container01 { margin: 10px 0; width: 300px; height: 490px; }
+    .container01 .content01 p { font-size: 18px; line-height: 2; }
+    .container02 { margin-left: 0; margin-top: 20px; width: 300px; height: 650px; }
+    .container02 .content02 p { font-size: 18px; }
+    .skills { width: 300px; }
+    .skills .sub_txt { width: 100%; }
+    .skill_cont1, .skill_cont2 { display: block; margin: 0 auto; width: 300px; }
+    .skill_cont1 .skill, .skill_cont2 .skill { width: 300px; }
+    .percent01, .percent02, .percent03, .percent04, .percent05, .percent06 { width: 260px; }
+
+    .section3 { display: none; }
+    .section3 .work { width: 300px; }
+    .slide_wrapper { width: 300px; }
+
+    section.section4 { height: 1800px; display: none; }
+    .section4 h1 { font-size: 150px; left: 1%; }
+    .section4 .year { width: 150px; height: 1800px; }
+    .section4 h2 { font-size: 80px; }
+    .section4 h2.y2016 { top: 90px; }
+    .section4 h2.y2017 { left: 41%; }
+    .section4 h2.y2019 { top: 1100px; }
+
+    .history01 { width: 280px; top: 50px; left: 62%; }
+    .travel_txt { width: 280px; top: 110px; left: 2%; }
+    .travel_txt h3 { font-size: 60px; }
+    .travel_txt strong { font-size: 24px; }
+    .history02 { width: 280px; left: 2%; }
+    .grad_txt { width: 280px; left: 61%; }
+    .grad_txt h3 { font-size: 60px; }
+    .grad_txt strong { font-size: 24px; }
+    .history03 { width: 280px; left: 61%; top: 1200px; }
+    .yon_txt { width: 280px; left: 2%; top: 1050px; }
+    .yon_txt h3 { font-size: 60px; }
+    .yon_txt strong { font-size: 24px; }
+    
+
+    footer .end { width: 300px; }
+    footer .end img { display: block; margin: 0 auto; width: 250px; }
+    footer .end .end_txt { width: 300px; margin: 20px 0 0; }
+    footer .end .end_txt p { font-size: 18px; }
+    footer .end .end_txt span { display: block; text-align: center; font-size: 14px; line-height: 1.75; }
+    
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@import url("./font.css");
+
+* { border: 0; margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body{ font-size:13px;font-size:62.5%;}
+/* body,#wrapper{height:100%;} */
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" );
+body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,ul,li,pre,fieldset, blockquote,caption,p, span{ margin:0;padding:0; border:0; font-size:13px;font-size:1.4rem; font-family:'Noto Sans KR', 'Malgun Gothic', 'Arial', sans-serif;font-weight:400;color:#000;box-sizing:border-box;/* position:relative; */vertical-align:middle;}	
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+
+ul, ol, dl {list-style:none;}
+ul,li{padding:0;margin:0;}
+i, em, address {font-style:normal; font-weight:normal;}
+strong { font-weight:normal; }
+img { border:0;display:block;}
+a {text-decoration:none;color:#000; cursor:pointer;}
+
+table,th,td,tr {border-collapse:collapse; border-spacing:0; margin:0;padding:0; font-size:13px;font-size:1.4rem; font-family:'Noto Sans KR', 'Malgun Gothic', 'Arial', sans-serif;font-weight:400;columns: #000;;box-sizing:border-box;/* position:relative; */vertical-align:middle;}
+
+input { outline: none; }
+
+/* margin 0 */
+.nmr { margin-right: 0!important; }
+.nml { margin-left: 0!important; }
+.nmt { margin-top: 0!important; }
+.nmb { margin-bottom: 0!important; }
+
+/* border 0 */
+.nbr { border-right: 0!important; }
+.nbl { border-left: 0!important; }
+.nbt { border-top: 0!important; }
+.nbb { border-bottom: 0!important; }
+
